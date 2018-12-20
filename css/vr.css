@@ -1,0 +1,36 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.vrSearch > div{margin-right: 20px;}
+.vrSearch > div .selectUl,#hotelInfo{width: 180px;}
+.vrSearch > div .selectUl span i{background: url(../images/upDown.png) no-repeat 7px 5px;}
+.vrSearch > div .selectUl span i.upDown{background: url(../images/upDown.png) no-repeat 7px -22px;}
+.vrSearch input[type='text']{width: 180px;}
+.vrSearch input[type='text'].dataRange{background: #fff url(../images/date.png) no-repeat 172px 3px;width: 200px;}
+#tipsVr{float:right;font-size:14px;color:#ff9900;display:block;height:31px;line-height:31px;}
+.tableContainer table tr td:nth-child(2) img {width: 50px;height: 50px;vertical-align: middle;}
+.tableContainer table tr td a{color:#0974e8;padding:0 5px;}
+#popVr >form{margin: 0 20px;padding-bottom: 25px;border-bottom: 1px solid #e8e8e8;margin-bottom: 20px;}
+#popVr .searchHotel>div {display: inline-block;position: relative;}
+#popVr .searchHotel>div:last-child{float:right;}
+#popVr .searchHotel>div .selectUl {width: 176px;}
+#popVr .searchHotel>div .selectUl span i {background: url(../images/smallIcons.png) no-repeat 6px -107px;}
+#popVr  .searchHotel>div .selectUl span i.upDown {background: url(../images/smallIcons.png) no-repeat 6px -74px}
+#popVr  .searchHotel input[type='text'] {height: 30px;line-height: normal;vertical-align: middle;border: 1px solid #dcdcdc;text-indent: 10px;color: #000;font-size: 14px;cursor: pointer}
+#popVr .searchHotel>div input[type='button'],#popVr .searchHotel>div input[type='reset']{padding: 0 27px;height: 30px;background: #0974e8;color: #fff;text-align: center;border-radius: 5px;display: inline-block;margin-right: 5px;margin-left: 10px;cursor: pointer;}
+.searchHotel>div input[type='reset']{border:1px solid #0974e8;color: #0974e8!important;background: #fff!important;box-sizing: border-box;}
+#uploader{margin-left:12px;margin-right:15px;}
+/*vrTit*/
+h3.vrTit{font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight: 650;font-style: normal;font-size: 14px;color: #666666;line-height: 21px;min-height: 21px;overflow: hidden;width:1200px;margin:0 auto;border-bottom:1px solid rgba(228, 228, 228, 1);padding-bottom: 10px;margin-top:20px;margin-bottom: 25px;}
+h3.vrTit i{display:inline-block;width:12px;height:16px;background:url(../images/tis.png) no-repeat;vertical-align: middle;margin-right: 12px;margin-top: -2px;}
+h3.vrTit > span{float:right;font-style:normal;}
+.qjBox{width:1200px;margin:0 auto;min-height:50px;overflow:auto;clear:both;}
+.qjBox ul{width:1050px;float:left;}
+.qjBox ul li{width:33.33%;float:left;display:inline-block;font-family: 'PingFangSC-Regular', 'PingFang SC';font-weight: 400;font-style: normal;font-size: 12px;color: #666666;line-height: 21px;text-indent: 10px;}
+.qjBox ul li p{padding:10px 0;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;max-width: 230px;}
+.qjBox ul li .red{cursor:pointer;text-decoration: underline;}
+.qjBox ul li img{display:inline-block;width:64px;height:64px;margin: 0 10px;}
+.opration{width:150px;text-align:center;float:right;margin-top: 28px;}
+.opration a{display:inline-block;height:28px;line-height:28px;border-radius:4px;color:#666666;background:rgba(16, 142, 233, 0.0470588235294118);border:1px solid rgba(217, 217, 217, 1);box-sizing:border-box;margin:0 5px;cursor:pointer;padding: 0 10px;}
+.opration a:first-child{background:rgba(16, 142, 233, 1);color:#fff;}
+.tableContainer{min-height:680px;}
+.shTips{font-size:12px;line-height:22px;padding:20px 15px;}

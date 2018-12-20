@@ -1,0 +1,204 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>VR管理</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/vr.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/vrManage.js"></script>
+</head>
+
+<body>
+<div class="header">
+        <div class="headerNav">
+            <img src="images/logo.png" style="cursor:pointer" onclick="javascript:location.href='/'">
+            <ul id="menuList">
+                
+                            <li><a href="/Orders" data-url="/Orders" class="menuActive">订单管理</a></li>
+                            <li><a href="/Hotels" data-url="/Hotels" class="">酒店管理</a></li>
+                            <li><a href="/Rooms" data-url="/Rooms" class="">房型管理</a></li>
+                            <li><a href="/Vr/VrSceneList" data-url="/Vr/VrSceneList" class="">VR管理</a></li>
+                            <li><a href="/Services/" data-url="/Services/" class="">酒店服务</a></li>
+                            <li><a href="/Financial" data-url="/Financial" class="">财务管理</a></li>
+                            <li><a href="/Users" data-url="/Users" class="">用户设置</a></li>
+
+            </ul>
+            <div class="navBar">
+                <div class="languageChange">
+                        <span class="nowLanguage"><em>中文版</em></span>
+                    <ul>
+                        <li id="en">ENGLISH</li>
+                        <li id="zh-cn">中文</li>
+                    </ul>
+                </div>
+                    <div class="per" id="divHeadAccount">
+                        <span>EbkTest02</span>
+                        <div class="perContent">
+                            <p>账号信息<span class="right"><a id="headHelper" target="_blank" href="/Content/files/萌兔EBK系统产品使用手册.pdf">帮助<img src="/Content/images/help_ico.png"></a>&nbsp;&nbsp;<a href="#" id="Signout">退出</a></span></p>
+                            <ul id="ulAccount">
+            <li><span>所在部门</span><lable title="ebk供应商组">ebk供应商组</lable></li>
+            <li><span>手机号码</span><label title="18345677777999">18345677777999</label></li>
+            <li><span>邮箱</span><label title="1111111111@qq.com">1111111111@qq.com</label></li>
+            <li><span>账户类型</span>主账户</li>
+       
+</ul><input id="headAccountId" value="db0015cdfeb640f0866b022b782982d1" type="hidden">
+                            <p><a href="javascript:void(0);" id="changePassword" data-title="修改密码">修改密码</a><a href="javascript:void(0);" class="right" id="editAccountDetails" data-title="编辑账号信息">编辑账号信息</a></p>
+                        </div>
+                    </div>
+          </div>
+    </div> 
+</div>
+<!--vr-->
+<h3 class="vrTit"><i></i>VR全景</h3>
+<div class="qjBox">
+  <ul>
+    <li>
+       <div class="left"><img src="images/kfPer.png"></div>
+       <div class="left">
+          <p>酒店编号：MT-123456</p>
+          <p>酒店名称：深圳福桥大酒店</p>
+       </div>
+    </li>
+    <li>
+       <p>创建人：某某</p>
+       <p>创建时间：2018-08-01  12:00:30</p>
+    </li>
+    <li>
+       <p>审核状态：<span class="green">审核通过</span></p>
+       <p>审核时间：2018-08-01  12:00:30</p>
+    </li>
+  </ul>
+  <div class="opration"><a href="#">预览</a><a href="#">编辑</a></div>
+</div>
+<h3 class="vrTit"><i></i>VR场景</h3>
+<div class="hotelManageTT">
+      <a href="javascript:void(0);" id="uploadVr">上传VR场景</a><a href="#" class="lightBlue">设置VR全景</a>
+</div>
+<div class="tableContainer">    
+  <table class="tableStyle">
+      <tr>
+        <th width="120">缩略图</th>
+        <th width="150">场景名称</th>
+        <th width="180">酒店编号</th>
+        <th width="300">酒店名称</th>
+        <th width="100">上传人</th>
+         <th width="160">上传时间</th>
+         <th>操作</th>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+      <tr>
+        <td><img src="images/kfPer.png"></td>
+        <td>中文名#英文名</td>
+        <td>MT-123456</td>
+        <td>深圳富桥大酒店</td>
+        <td>伍鸿锋</td>
+        <td>2018-03-23  12:00:00</td>
+        <td><a href="#" class="preview">预览</a></td>
+      </tr>
+  </table>
+    <div class="pagination">
+           <span class="current prev">上一页</span>
+           <a href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#" class="current">4</a>
+           <a href="#">100</a>
+           <a href="#" class="next">下一页</a>
+  </div>
+</div>
+<!--vr弹框-->
+<div class="popBox" id="popVr" style="display:none;">
+     <h3><i></i>酒店搜索<span onClick="vrSearch.layerClose();"></span></h3>
+     <form class="searchHotel">
+        <div>
+            <em>酒店搜索：</em>
+            <div class="selectUl">
+                <span><em>酒店名称/酒店编码</em><i></i><input type="hidden" value="0"></span>
+                <ul style="display: none;">
+                    <li data="0">酒店名称</li>
+                    <li data="1">酒店编码</li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <input type="text" id="hotelQueryValue" placeholder="请输入">
+            <div class="hotelSearch" style="display: none;">
+                <ul id="hotel_list"></ul>
+                <div id="hotelListPage"></div>
+            </div>
+        </div>
+        <div><input type="button" value="搜索"><input type="reset" value="重置" onClick="vrSearch.resetChoose(this)"></div>
+    </form>
+    <div id="uploader">
+        <p>您的浏览器不支持Flash, Silverlight 或 HTML5。</p>
+    </div>
+</div>
+<!--侧边栏-->
+<!--copyRight-->
+<div class="copyRight"> Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层 湘ICP备160</div>
+</body>
+</html>

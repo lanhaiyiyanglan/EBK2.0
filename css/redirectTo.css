@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+.redirectTo{padding:180px 0;width:1200px;margin:0 auto;margin-bottom:230px;}
+.redirectTo dl{position:relative;display: -webkit-box;display: box;padding: 0 200px;font-size: 16px;line-height:32px;color: #696969;}
+.redirectTo dl dt{width:150px;}
+.redirectTo dl dt i{display:block;width:50px;height:50px;background:url(../images/kfPer.png) no-repeat center;border-radius:50%;margin:0 auto;margin-top: 20px;}
+.redirectTo dl dd{-webkit-box-flex: 1;box-flex: 1;display: box;display: -webkit-box;-webkit-box-orient: vertical;-webkit-box-pack: center;}
+.redirectTo dl dd i{color:red;}
+.redirectTo > p,.redirectTo > a{text-align:center;display:block;}
+.redirectTo > p{padding-top:40px;border-bottom: 2px solid #0974e8;padding-bottom: 12px;position:relative;margin-bottom:50px;font-size: 14px;color: #0066cc;}
+.redirectTo > p i{display:block;width:0;height:0;overflow:hidden;border-left: 10px solid transparent;border-right: 10px solid transparent;border-top: 10px solid #0974e8;position:absolute;z-index:2;bottom: -11px;left: 50%;margin-left: -10px;}
+.redirectTo > a{font-size: 14px;height: 30px;line-height: 30px;border: 1px solid #0974e8;background: #0974e8;color: #fff;text-align: center;border-radius: 5px;display: block;margin: 0 auto;width: 120px;cursor: pointer;}

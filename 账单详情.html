@@ -1,0 +1,233 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>账单详情</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/financial.css">
+</head>
+
+<body>
+<div class="header">
+        <div class="headerNav">
+            <img src="images/logo.png" style="cursor:pointer" onClick="javascript:location.href='/'">
+            <ul id="menuList">
+                
+                            <li><a href="/Orders" data-url="/Orders" class="">订单管理</a></li>
+                            <li><a href="/Hotels" data-url="/Hotels" class="">酒店管理</a></li>
+                            <li><a href="/Rooms" data-url="/Rooms" class="">房型管理</a></li>
+                            <li><a href="/Vr/VrSceneList" data-url="/Vr/VrSceneList" class="">VR管理</a></li>
+                            <li><a href="/Services" data-url="/Services" class="">酒店服务</a></li>
+                            <li><a href="/Users" data-url="/Users" class="menuActive">用户设置</a></li>
+
+            </ul>
+            <div class="navBar">
+                <div class="languageChange">
+                        <span class="nowLanguage"><em>中文版</em></span>
+                    <ul>
+                        <li id="en">ENGLISH</li>
+                        <li id="zh-cn">中文</li>
+                    </ul>
+                </div>
+                    <div class="per" id="divHeadAccount">
+                        <span>test66</span>
+                        <div class="perContent">
+                            <p>账号信息<span class="right"><a id="headHelper" target="_blank" href="/Content/files/萌兔EBK系统产品使用手册.pdf">帮助<img src="/Content/images/help_ico.png"></a>&nbsp;&nbsp;<a href="#" id="Signout">退出</a></span></p>
+                            <ul id="ulAccount">
+            <li><span>所在部门</span><lable title=""></lable></li>
+            <li><span>手机号码</span><label title="18974910816">18974910816</label></li>
+            <li><span>邮箱</span><label title="316057864@qq.com">316057864@qq.com</label></li>
+            <li><span>账户类型</span>主账户</li>
+       
+</ul><input id="headAccountId" value="9e419b2760aa4d529abe54d7be4ff51a" type="hidden">
+                            <p><a href="javascript:void(0);" id="changePassword" data-title="修改密码">修改密码</a><a href="javascript:void(0);" class="right" id="editAccountDetails" data-title="编辑账号信息">编辑账号信息</a></p>
+                        </div>
+                    </div>
+                </div>
+    </div> 
+</div>
+<!--搜索-->
+<div class="hereTop"><span class="blue">账单管理</span>／账单详情</div>
+<div class="billWrapper">
+  <div class="billBox">
+     <h3><i></i>账单总览<span><a href="#">提交发票</a><a 
+     href="#">下载对账单</a></span></h3>
+     <ul>
+       <li><span>账单号</span>MT100151201806040001</li>
+       <li><span>账单名</span>1001512018-06-04～2018-06-30</li>
+       <li><span>供应商名称</span>湖南萌兔旅行科技有限公司</li>
+       <li><span>结算周期</span>周结算/月结</li>
+       <li><span>结算方式</span>预定日期/离店日期</li>
+       <li><span>账单起止日期</span>2018-03-30 ～2018-04-01</li>
+       <li><span>结算币种</span>人民币/美元</li>
+       <li><span>账单总额</span><i class="orange">500.00</i></li>
+       <li><span>账单生成时间</span>2018-02-02  12:00:00</li>
+     </ul>
+  </div>
+  <div class="billBox">
+    <h3><i></i>预定费用</h3>
+    <h4>账单金额：<span>20,000.00</span></h4>
+    <table>
+      <tr>
+        <th>订单号</th>
+        <th>确认号</th>
+        <th>酒店名称</th>
+        <th>房型</th>
+        <th>入住人</th>
+        <th>入住日期</th>
+        <th>离店日期</th>
+        <th>间夜</th>
+        <th>账单金额</th>
+        <th>预定时间</th>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+    </table>
+  </div>
+  <div class="billBox">
+    <h3><i></i>取消订单退款</h3>
+    <h4>账单金额：<span>-20,000.00</span></h4>
+    <table>
+      <tr>
+        <th>订单号</th>
+        <th>确认号</th>
+        <th>酒店名称</th>
+        <th>房型</th>
+        <th>入住人</th>
+        <th>入住日期</th>
+        <th>离店日期</th>
+        <th>间夜</th>
+        <th>账单金额</th>
+        <th>预定时间</th>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+    </table>
+  </div>
+  <div class="billBox">
+    <h3><i></i>其他费用</h3>
+    <h4>账单金额：<span>-20,000.00</span></h4>
+    <table>
+      <tr>
+        <th>订单号</th>
+        <th>确认号</th>
+        <th>酒店名称</th>
+        <th>房型</th>
+        <th>入住人</th>
+        <th>入住日期</th>
+        <th>离店日期</th>
+        <th>间夜</th>
+        <th>账单金额</th>
+        <th>预定时间</th>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+      <tr>
+        <td>MT-B1807251001510036</td>
+        <td>123456</td>
+        <td>新加坡四季酒店</td>
+        <td>标准大床房</td>
+        <td>akris</td>
+        <td>2018-01-02</td>
+        <td>2018-01-05</td>
+        <td>3</td>
+        <td>2575.00</td>
+        <td>2018-02-02  12:00:00</td>
+      </tr>
+    </table>
+  </div>
+</div>
+<!--copyRight-->
+<div class="copyRight"> Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层 湘ICP备160</div>
+</body>
+</html>

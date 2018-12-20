@@ -1,0 +1,157 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>新增提醒设置</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/userManage.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/addCaution.js"></script>
+</head>
+
+<body>
+<div class="header">
+   <div class="headerNav">
+   <img src="images/logo.png">
+   <ul id="menuList">
+    <li><a href="#">订单管理</a></li>
+        <li><a href="#">酒店管理</a></li>
+        <li><a href="#">房型管理</a></li>
+        <li><a href="#">VR管理</a></li>
+        <li><a href="#">酒店服务</a></li>
+        <li><a href="#">用户设置</a></li>
+     </ul>
+     <div class="navBar">
+         <a href="#">English</a>
+         <div class="per">
+            <span>伍鸿锋</span>
+            <div class="perContent">
+               <p>账号信息<a href="#" class="right">退出</a></p>
+               <ul>
+                  <li><span>部门</span>技术部</li>
+                  <li><span>座机</span>0731-45122525</li>
+                  <li><span>邮箱</span>437679832@qq.com</li>
+                  <li><span>账户类型</span>子账号</li>
+                  <li><span>酒店权限</span>123456</li>
+               </ul>
+               <p><a href="#">修改密码</a><a href="#" class="right">编辑账号信息</a></p>
+            </div>
+         </div>
+     </div>
+   </div>
+</div>
+<!--用户设置-->
+<div class="currentPosition">
+    <ul>
+      <li><a href="#">账户管理</a></li>
+      <li><a href="#">休息日设置</a></li>
+      <li  class="on"><a href="#">提醒设置</a></li>
+    </ul>
+    <i></i>
+</div>
+<div class="hereTop"><span class="blue">提醒设置</span>／新增提醒</div>
+<form class="addCaution">
+   <dl>
+      <dt>类型</dt>
+      <dd>
+         <div class="selectUl">
+                 <span><em></em><i></i><input type="hidden"></span>
+                 <ul>
+                    <li data="0">全部</li>
+                    <li data="1">禁用</li>
+                    <li data="2">启用</li>
+                 </ul>
+          </div>
+      </dd>
+   </dl>
+   <dl>
+      <dt>提醒时间</dt>
+      <dd>
+         <ul>
+           <li><input type="checkbox"  id="cautionTimeAll"><label for="cautionTimeAll">全选</label></li>
+           <li><input type="checkbox"  id="cautionTime1"  name="cautionTime"><label for="cautionTime1">周一</label></li>
+           <li><input type="checkbox"  id="cautionTime2"  name="cautionTime"><label for="cautionTime2">周二</label></li>
+           <li><input type="checkbox"  id="cautionTime3"  name="cautionTime"><label for="cautionTime3">周三</label></li>
+           <li><input type="checkbox"  id="cautionTime4"  name="cautionTime"><label for="cautionTime4">周四</label></li>
+           <li><input type="checkbox"  id="cautionTime5"  name="cautionTime"><label for="cautionTime5">周五</label></li>
+           <li><input type="checkbox"  id="cautionTime6"  name="cautionTime"><label for="cautionTime6">周六</label></li>
+           <li><input type="checkbox"  id="cautionTime7"  name="cautionTime"><label for="cautionTime7">周日</label></li>
+         </ul>
+      </dd>
+   </dl>
+   <dl>
+      <dt>提醒时段</dt>
+      <dd>
+         <div class="selectUl">
+                 <span><em></em><i></i><input type="hidden" name="beforTime"></span>
+                 <ul>
+                    <li data="0">00:00</li><li data="1">01:00</li><li data="2">02:00</li><li data="3">03:00</li><li data="4">04:00</li><li data="5">05:00</li>
+                    <li data="6">06:00</li><li data="7">07:00</li><li data="8">08:00</li><li data="9">09:00</li><li data="10">10:00</li><li data="11">11:00</li>
+                    <li data="12">12:00</li><li data="13">13:00</li><li data="14">14:00</li><li data="15">15:00</li><li data="16">16:00</li><li data="17">17:00</li>
+                    <li data="18">18:00</li><li data="19">19:00</li><li data="20">20:00</li><li data="21">21:00</li><li data="22">22:00</li><li data="23">23:00</li>
+                 </ul>
+          </div>
+          <em>—</em>
+          <div class="selectUl">
+                 <span><em></em><i></i><input type="hidden" name="lateTime"></span>
+                 <ul>
+                    <li data="0">00:00</li><li data="1">01:00</li><li data="2">02:00</li><li data="3">03:00</li><li data="4">04:00</li><li data="5">05:00</li>
+                    <li data="6">06:00</li><li data="7">07:00</li><li data="8">08:00</li><li data="9">09:00</li><li data="10">10:00</li><li data="11">11:00</li>
+                    <li data="12">12:00</li><li data="13">13:00</li><li data="14">14:00</li><li data="15">15:00</li><li data="16">16:00</li><li data="17">17:00</li>
+                    <li data="18">18:00</li><li data="19">19:00</li><li data="20">20:00</li><li data="21">21:00</li><li data="22">22:00</li><li data="23">23:00</li>
+                 </ul>
+          </div>
+      </dd>
+   </dl>
+   <dl>
+      <dt>提醒方式</dt>
+      <dd>
+        <ul>
+           <li><input type="checkbox"  id="cautionWayAll"><label for="cautionWayAll">全选</label></li>
+           <li><input type="checkbox"  id="cautionWay1"  name="cautionWay"><label for="cautionWay1">周一</label></li>
+           <li><input type="checkbox"  id="cautionWay2"  name="cautionWay"><label for="cautionWay2">周二</label></li>
+           <li><input type="checkbox"  id="cautionWay3"  name="cautionWay"><label for="cautionWay3">周三</label></li>
+           <li><input type="checkbox"  id="cautionWay4"  name="cautionWay"><label for="cautionWay4">周四</label></li>
+           <li><input type="checkbox"  id="cautionWay5"  name="cautionWay"><label for="cautionWay5">周五</label></li>
+           <li><input type="checkbox"  id="cautionWay6"  name="cautionWay"><label for="cautionWay6">周六</label></li>
+           <li><input type="checkbox"  id="cautionWay7"  name="cautionWay"><label for="cautionWay7">周日</label></li>
+         </ul>
+         <div class="tips">
+          <span>说明：1.系统提醒仅针对新订单进行提醒；</span>
+          <p>2.微信公众号提醒需关注萌兔国际公众号：MT89793370；</p>
+          <p>3.短信提醒仅针对大陆用户手机号码</p>
+         </div>
+      </dd>
+   </dl>
+   <dl>
+      <dt>&nbsp;</dt>
+      <dd><input type="button" value="确定"><input type="reset" value="取消" id="resetCaution"></dd>
+   </dl>
+</form>
+ <!--侧边栏-->
+ <div class="helpBar" id="helpBarMtindex">
+    <a target="_parent" id="kFu" href="tencent://message/?Menu=yes&amp;uin=209252360&amp;Site=萌兔客服&amp;Service=200&amp;sigT=2a0e37386280486ada2b5d5e69ee49186ccae1257fd9e1c9598af1f0b9c916067002a57aaaec8c8d" ></a>
+    <a href="javascript:void(0);"   id="zXun"></a>
+    <a href="javascript:void(0);" id="gzNumber"><i></i></a>
+    <a href="javascript:void(0);" id="feedBack"></a>
+    <a href="javascript:void(0);" id="voice"></a>
+    <a href="javascript:void(0);" id="goTop"></a>
+</div>
+<div class="tipKuang">
+    <div class="kfBox">
+        <div class="kfInfo">
+            <i></i>
+            <p>售后问题请拨打客服电话</p>
+            <ul>
+                <li>客服电话：0731-88725870</li>
+                <li>紧急联系电话：189-3247-6485</li>
+            </ul>
+        </div>
+        <div class="closeLine">关闭</div>
+    </div>
+</div>
+<!--copyRight-->
+<div class="copyRight"> Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层 湘ICP备160</div>
+</body>
+</html>

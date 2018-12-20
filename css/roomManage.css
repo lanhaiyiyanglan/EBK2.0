@@ -1,0 +1,156 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*房型管理*/
+.hotelManagewapper3{padding:0 20px;width: 940px;margin-top:0px;}
+.hotelManagewapper3 >form{width:100%;padding: 36px 0px;}
+.hotelManagewapper > form{width:1200px;margin:0 auto;padding: 36px 0!important;}
+.hotelManagewapper3 .hotelManage{width:940px;}
+.hotelManagewapper3 >form >div{margin-right:10px;}
+.hotelManagewapper3 >form > div .selectUl span i{background: url(../images/upDown.png) no-repeat 7px 5px;}
+.hotelManagewapper3 >form > div .selectUl span i.upDown{background: url(../images/upDown.png) no-repeat 7px -22px;}
+.hotelStyle{width:1200px;margin:0 auto;margin-top: 15px;margin-bottom: 80px;min-height: 850px;overflow: hidden;}
+.hotelManagewapper3 >form >div input[type='text']{width:100%;}
+.usually{width:198px;float:left;}
+.usually h3{font-size:14px;color:#333333;height: 35px;line-height: 35px;}
+#usuallyList{border: 1px solid rgba(235,235,235,1);min-height: 576px;}
+#usuallyList ul li{border-top: 1px dashed rgba(235,235,235,1);padding: 15px 5px 15px 25px;background: url(../images/smallIcons.png) no-repeat -184px 20px;line-height: 18px;border-bottom: 1px dashed #e8e8e8;}
+#usuallyList ul li a{color:#333333;}
+#usuallyList ul li.on{background: url(../images/smallIcons.png) no-repeat -184px -83px;}
+#usuallyList ul li.on a{color: #0066cc;}
+.hotelStyleRight{width:980px;float:right;position:relative;}
+.hotelStyleRight h3{height:35px;line-height:35px;font-size: 14px;color: #333333;}
+.hotelStyleRight .itemChoose input[type="button"]{padding: 0 12px;height:30px;display:inline-block;border:1px solid #0974e8;color:#0974e8;text-align:center;background:#fff;border-radius:4px;font-size: 14px;cursor: pointer;}
+.hotelStyleRight .itemChoose input.disableGo{border:1px solid #dddddd;color:#ccc;}
+.hotelStyleRight .itemChoose input[type="text"]{background: url(../images/smallIcons.png) no-repeat 4px -163px;border:1px solid #dcdcdc;height:28px;display:inline-block;width: 120px;padding-left: 35px;font-size: 14px;margin: 0 10px;cursor: pointer;}
+#styleTable{width:100%;color:#333333;table-layout: fixed;}
+#styleTable tr th{color:#656565;font-weight:500;border: 1px solid rgba(235, 235, 235, 1);font-weight:normal;background: rgba(16, 142, 233, 0.0470588235294118);height: 56px;font-size:14px;}
+#styleTable tr th label input,#styleTable tr td label input{width:15px;height:15px;display:inline-block;vertical-align: middle;}
+#styleTable tr td{color:#666666;border: 1px solid rgba(235,235,235,1);height:92px;font-size:12px;position: relative;word-break: break-all;padding:0 5px;}
+#styleTable tr td:nth-child(2),#styleTable tr td:first-child{padding:0 8px!important;}
+#styleTable tr td:last-child{text-align:center;}
+#styleTable tr td p{line-height: 25px;}
+#styleTable tr td p.shenghe{cursor:pointer;}
+#styleTable tr td a.addSale{display:inline-block;color:#0974e8;background: url(../images/smallIcons.png) no-repeat -4px -338px;padding-left:20px;cursor: pointer;}
+#styleTable tr td a.right{padding-right:10px;}
+#styleTable tr td a{color:#0974e8;}
+#styleTable tr td p em,#styleTable tr td i.full{position:absolute;z-index:9;background: #e96589;top:0px;right:0px;width:21px;height:15px;line-height:15px;text-align:center;color: #fff;}
+#styleTable tr td i.full{background:#4c9a33;left:0px!important;}
+/*#styleTable tr td:first-child{text-indent:15px;}*/
+.itemChoose{min-height:30px;line-height:30px;overflow:hidden;margin-bottom: 10px;}
+#usuallyHotelPage{height:30px;text-align:center;margin-top: 20px;margin-bottom: 20px;}
+.usuallySearch{border:1px solid #e8e8e8;width: 160px;margin:20px auto;height: 32px;}
+.usuallySearch input{display:inline-block;height:32px;line-height:32px;vertical-align: middle;}
+.usuallySearch input[type='text']{text-indent: 5px;width: 135px;}
+.usuallySearch input[type='button']{background: url(../images/search.png) no-repeat 0px 8px;width: 25px;cursor: pointer;}
+#fxBox1, #fxBox3 {width: 130px}
+#fxBox2 {width: 175px;}
+/*审核弹框*/
+.shBox{position:relative;}
+.shBox > i{display:block;position:absolute;z-index:2;right: 30px;top: 12px;height:24px;width:24px;background:url(../images/close.png) no-repeat;cursor: pointer;}
+.shBox h3{font-size:14px;color:#333333;height:55px;line-height:55px;border-bottom:1px solid #e8e8e8;padding-left: 23px;}
+.shBox h3 i{vertical-align:middle;width:4px;height: 17px;display: inline-block;margin-right: 5px;background: #0974e8;margin-top: -1px;}
+.shengHeTxt{padding:0 110px 0 30px;border-bottom:1px solid #e8e8e8;padding-top: 18px;position: relative;}
+.shengHeTxt p{font-size:12px;color:#666666;padding-bottom: 18px;word-break: break-all;}
+.shengHeTxt p span{padding-left: 75px;}
+.shengHeTxt i{position: absolute;right: 30px;width: 72px;height: 72px;top: 7px;z-index: 2;}
+.shengHeTxt i.status1{background: url(../images/shenghe.png) no-repeat -2px 0px;}
+.shengHeTxt i.enStatus1{background: url(../images/waitSh.png) no-repeat;}
+.shengHeTxt i.status2{background: url(../images/shenghe.png) no-repeat -254px 0px;}
+.shengHeTxt i.enStatus2{background: url(../images/noPass.png) no-repeat;}
+.shengHeTxt i.status3{background: url(../images/shenghe.png) no-repeat -460px 1px;}
+.shengHeTxt i.enStatus3{background: url(../images/pass.png) no-repeat;}
+.shBox ul{padding-left: 30px;margin-top: 8px;margin-bottom: 15px;}
+.shBox ul li{display:inline-block;color:#333333;font-size:14px;margin-right: 40px;line-height:36px;cursor: pointer;}
+.shBox ul li.on{color:#0974e8;border-bottom:2px solid #0974e8;line-height:34px;}
+.shBox .shTable{width: 865px;margin: 0 auto;}
+.shBox .shTable .tableWrapper{margin-top:20px;max-height: 500px;overflow-y:auto;}
+.shBox .shTable table{text-align:center;color: #333333;width:100%;table-layout: fixed;}
+.shBox .shTable table tr th{border: 1px solid #e8e8e8;font-weight: normal;background: #fafafa;height: 50px;font-size: 14px;}
+.shBox .shTable table tr td{border: 1px solid #e8e8e8;height: 50px;font-size: 12px;word-break: break-all;}
+.shBox .shTable table tr td a{color:#0974e8;}
+.shBox .shTable .pagination{margin:0 auto;margin-top:10px;width:100%;}
+/*新增编辑售卖房型*/
+#addForm{width:1200px;margin:0 auto;min-height:760px;padding-top: 10px;}
+#addForm dl{min-height:30px;margin-bottom:20px;color:#333333;font-size:14px;width: 100%;clear: both;}
+#addForm dl dd{max-width: 1045px;float: left;min-height: 30px;vertical-align: middle;}
+#addForm dl dt{width:125px;padding-right:30px;text-align:right;float: left;line-height: 30px;}
+#addForm dl dt .red{font-size:14px;padding-right:2px;}
+#addForm > dl > dd .selectUl,#addForm > dl > dd > input[type='text']{display:inline-block;width: 375px;height: 30px;position:relative;vertical-align: middle;text-indent: 10px;border: 1px solid #e8e8e8;box-sizing: border-box;}
+#addForm > dl > dd .selectUl ul{position:absolute;z-index:2;display:none;background: #fff;border: 1px solid #dcdcdc;width: 100%;border-top: none;border-bottom-left-radius: 2px;border-bottom-right-radius: 2px;margin-left: -1px;max-height: 186px;overflow-y: scroll;margin-top:28px;}
+#addForm > dl > dd .selectUl ul li{height:30px;line-height:30px;text-indent:10px;border-top: 1px solid #dcdcdc;cursor:pointer;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+#addForm > dl > dd .selectUl ul li:hover{background:#ebebeb;}
+#addForm > dl > dd .selectUl span{position:relative;display:block;cursor:pointer;font-size: 14px;}
+#addForm > dl > dd .selectUl span i{position:absolute;width:30px;height:16px;right: 0px;top: 6px;background: url(../images/upDown.png) no-repeat 7px 5px;}
+#addForm > dl > dd .selectUl span i.upDown{background: url(../images/upDown.png) no-repeat 7px -22px;}
+
+.tagItems{width: 715px;line-height: 30px;padding-bottom: 10px;min-height: 30px;overflow: hidden;}
+.tagItems li{display:inline-block;float:left;margin-right:10px;position: relative;}
+#addForm > dl > dd input[name='ckFx'],#addForm > dl > dd input[name='AllowCancel']{position: absolute;width: 16px;height: 16px;opacity: 0;top: 50%;margin-top: -8px;}
+#addForm > dl > dd input[name='AllowCancel']{width: 20px;height: 20px;opacity: 0;top: 50%;margin-top: -10px;}
+#addForm > dl > dd input[name='ckFx'] + label{display: inline-block;padding-left: 20px;padding-right: 10px;background: url(../images/checkbox.png) no-repeat -3px -109px;cursor: pointer;}
+#addForm > dl > dd input[name='ckFx']:checked + label {background: url(../images/checkbox.png) no-repeat -3px -176px;}
+#moreTag{color:#177ce9;padding-right: 20px;background: url(../images/upDown2.png) no-repeat 31px 11px;float: right;}
+#moreTag.down{background: url(../images/upDown2.png) no-repeat 32px -16px;}
+#addForm > dl > dd >span{display:inline-block;margin-left:5px;}
+#addForm > dl > dd input[name='AllowCancel'] + label{display: inline-block;padding-left: 25px;padding-right: 30px;background: url(../images/radio.png) no-repeat  -4px -6px;cursor: pointer;}
+#addForm > dl > dd input[name='AllowCancel']:checked + label {background: url(../images/radio.png) no-repeat -3px -93px;}
+#addForm > dl > dd >p,.addKfee{margin-bottom:20px;position: relative;margin-top: 8px;}
+.wdInput{text-indent:10px;border:1px solid #e8e8e8;height: 30px;box-sizing: border-box;display:inline-block;}
+.wdInput.wd1{width:376px;margin-left:30px;margin-right:15px;}
+.wdInput.wd2{margin-left:30px;width:334px;margin-right:15px;}
+.wdInput.wd3{width:88px;margin-left: 10px;margin-right: 10px;}
+.sureBtn,.resetBtn{cursor:pointer;height:30px;line-height:30px;padding:0 24px;border-radius:5px;border:1px solid #0974e8;background:#fff;color:#0974e8;display:inline-block;font-size:14px;}
+.sureBtn{color:#fff;margin-right:60px;background:#0974e8;}
+#AllowDiv {margin-bottom: 20px;}
+.addKfee {margin-bottom:10px;}
+.addKfee > p{margin-top:10px;}
+.addKfee > p:first-child{margin-top:0px;}
+#addBtn,.jianBtn{cursor:pointer;display:inline-block;width:30px;height:30px;vertical-align: middle;margin-left: 15px;}
+#addBtn{background:url(../images/add.png) no-repeat 0px 0px;}
+.jianBtn{background:url(../images/add.png) no-repeat 0px -70px;}
+#addForm > dl > dd .selectUl span em{display:inline-block;color:#999999;width: 100%;height: 100%;float:left;}
+#addForm > dl > dd div.hui{color:#999999;line-height: 30px;padding-bottom: 10px;}
+/*管理物理房型*/
+#wlBox1 {width: 180px;}
+#wlBox3 {width: 157px;}
+.hotelManagewapper2 > form > div {margin-right: 5px;}
+.hotelManagewapper2 > form > div input[type='text'] {width: 180px;}
+.hotelManagewapper2 > form > div .selectUl span i {position: absolute;width: 30px;height: 16px;right: 0px;top: 6px;background: url(../images/upDown.png) no-repeat 7px 5px;}
+.hotelManagewapper2 > form > div .selectUl span i.upDown {background: url(../images/upDown.png) no-repeat 7px -22px;}
+.tableStyle tr th:first-child, .tableStyle tr td:first-child {text-align: left;padding-left: 10px;}
+.tableStyle tr th:first-child input, .tableStyle tr td:first-child input {position: absolute;width: 16px;height: 16px;opacity: 0;margin-top: 2px;}
+.tableStyle tr th:first-child input + label {display: inline-block;padding-left: 20px;background: url(../images/checkbox.png) no-repeat -3px -62px;cursor: pointer;}
+.tableStyle tr th:first-child input:checked + label {background: url(../images/checkbox.png) no-repeat -3px -183px;}
+.tableStyle tr td:first-child input + label {display: inline-block;padding-left: 20px;background: url(../images/checkbox.png) no-repeat -3px -116px;cursor: pointer;white-space: nowrap;
+word-break: break-all;overflow: hidden;text-overflow: ellipsis;max-width: 278px;}
+.tableStyle tr td:first-child input:checked + label {background: url(../images/checkbox.png) no-repeat -3px -183px;}
+.mastRoom tr td:nth-child(4){overflow: hidden;text-overflow: ellipsis;white-space: nowrap;cursor:pointer;}
+.tableStyle tr td a{text-decoration: underline;padding: 0 13px 2px 11px;}
+/*图片文件上传*/
+.uploadWraper{width:1200px;margin:0 auto;min-height:730px;margin-bottom:30px;padding-top:10px;}
+.uploadWraper dl{font-size:14px;clear:both;min-height:30px;overflow:hidden;margin-bottom:20px;}
+.uploadWraper dl dt{width:120px;text-align:right;padding-right:30px;float:left;}
+.uploadWraper dl dd{width:465px;float:left;}
+.uploadWraper dl dd input[type='text']{width:373px;height:28px;line-height:28px;border:1px solid #e8e8e8;text-indent: 10px;}
+.uploadWraper dl dd textarea{width:373px;height:160px;line-height:28px;border:1px solid #e8e8e8;text-indent: 10px;outline: none;background:#fff;font-family: Helvetica Neue,Helvetica,PingFang SC,微软雅黑,Tahoma,Arial,sans-serif;}
+.uploadWraper dl dd > i{padding-left:10px;}
+#chooseUpload li{display:inline-block;color:#0066cc;margin-right: 30px;cursor:pointer}
+#chooseUpload li.on{border-bottom:1px solid #0066cc;}
+.uploadWraper dl dd input[type='button'],.uploadWraper dl dd input[type='reset']{padding:0 15px;display:inline-block;height:30px;line-height:30px;border:1px solid #0974e8;font-size:12px;border-radius:4px;color:#fff;background:#0974e8;}
+.uploadWraper dl dd input[type='reset']{background:#fff;color:#0974e8;margin-left:15px;}
+.fileBox ul{padding-top:20px;min-height:105px;overflow:hidden;}
+.fileBox ul li{position:relative;display:inline-block;width: 95px;height: 95px;position:relative;padding: 5px 5px;vertical-align: middle;margin-right:20px;margin-bottom: 20px;border:1px dashed #bdbdbd;border-radius: 5px;}
+.fileBox ul li img,.fileBox ul li video{display: block;vertical-align: middle;width: 100%;height: 100%;}
+.fileBox ul li input[type='file']{display: block;width: 0;height: 0;-webkit-opacity: 0.0;  -moz-opacity: 0.0;  -khtml-opacity: 0.0;  opacity: .0;  filter:alpha(opacity=0);  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+.fileBox ul li i{z-index:3;width: 20px;height: 20px;display:block;position: absolute;cursor: pointer;background:url(../images/delClose.png) no-repeat;border-radius:50%;right: -8px;top: -7px;}
+.fileBox ul li > a{position:absolute;display:block;z-index:2;width:100%;height:100%;background:url(../images/linkVr.png) no-repeat center;top:0px;left:0px;cursor: pointer;}
+.fileBox ul li > a.play{background:url(../images/play.png) no-repeat center;}
+
+.saleroomHighlight {border: 1px solid #e80a0a;}
+.roomDisable {
+    background: rgba(221,221,221,0.3);
+}
+
+.roomEnable {
+    background: rgba(160,205,255,0.5);
+}

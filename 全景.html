@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/index.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/index2.js"></script>
+<script src="js/ckplayer/ckplayer.js"></script>
+<script src="js/layer/layer.js"></script>
+</head>
+
+<body>
+<div class="header">
+        <div class="headerNav">
+            <img src="images/logo.png">
+            <ul id="menuList">
+                <li><a href="/Orders" data-url="/Orders" class="menuActive">订单管理</a></li>
+                <li><a href="/Hotels" data-url="/Hotels" class="">酒店管理</a></li>
+                <li><a href="/Rooms" data-url="/Rooms" class="">房型管理</a></li>
+                <li><a href="/Vr/VrSceneList" data-url="/Vr/VrSceneList" class="">VR管理</a></li>
+                <li><a href="/Services/ServiceData" data-url="/Services/ServiceData" class="">酒店服务</a></li>
+                <li><a href="/Users" data-url="/Users" class="">用户设置</a></li>
+            </ul>
+            <div class="navBar">
+                <div class="languageChange">
+                    <span class="nowLanguage"><em>中文版</em><i></i></span>
+                    <ul>
+                        <li id="en">ENGLISH</li>
+                        <li id="zh-cn">中文</li>
+                    </ul>
+                </div>
+                <div class="per" id="divHeadAccount">
+                    <span>EbkTest02</span>
+                    <div class="perContent">
+                        <p>账号信息<a href="#" class="right" id="Signout">退出</a></p>
+                        <ul id="ulAccount">
+                            <li><span>所在部门</span>ebk供应商组</li>
+                            <li><span>座机</span></li>
+                            <li><span>邮箱</span>495155736@qq.com</li>
+                            <li><span>账户类型</span>主账户</li>
+       
+                        </ul>
+                        <input id="headAccountId" value="db0015cdfeb640f0866b022b782982d1" type="hidden">
+                        <p><a href="#" id="changePassword">修改密码</a><a href="#" class="right" id="editAccountDetails">编辑账号信息</a></p>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!---->
+<div class="vrShow">
+     <iframe scrolling="auto" allowtransparency="true"  frameborder="0" src="http://vr.m-tu.com/tour/show/AAA1FC0EDCAA9DB198DE914C507BED05" style="height:100%;width:100%;"></iframe>
+     <div class="contentTxt">
+       <i></i>
+       <a href="javascript:void(0);"></a>
+     </div>
+     <div class="contactUs"><i></i>联系我们</div>
+</div>
+<!--联系我们-->
+<div class="contactInfo">
+   <h3><i></i></h3>
+   <div>
+        <p>供应商合作</p>
+        <p>电话：0731-88725855</p>
+        <p>邮箱：EBKservice@m-tu.com</p>
+   </div>
+   <div>
+        <p>VR拍摄</p>
+        <p>电话：0731-88725870</p>
+        <p>邮箱：VR@m-tu.com</p>
+   </div>
+</div>
+</body>
+</html>

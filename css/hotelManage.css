@@ -1,0 +1,62 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*酒店管理*/
+.hotelManagewapper{min-width:1200px;width: 100%!important;}
+.hotelManagewapper > form{width:1200px;margin:0 auto;padding:36px 0;}
+.hotelManagewapper > form > div{margin-right: 5px;}
+.hotelManagewapper > form > span{padding:0 5px;color:#000000;}
+.hotelManagewapper > form > div input[type='text']{width:110px;}
+.hotelManagewapper > form > div  .selectUl span i{background: url(../images/upDown.png) no-repeat 7px 5px;}
+.hotelManagewapper > form > div  .selectUl span i.upDown{background: url(../images/upDown.png) no-repeat 7px -22px;}
+#hotelBox1{width:162px;}
+#hotelBox2{width:156px;}
+#hotelBox3{width: 156px;}
+.tableStyle tr th:first-child,.tableStyle tr td:first-child{text-align:left;padding-left: 10px;}
+.tableStyle tr th:first-child input,.tableStyle tr td:first-child input{position: absolute;width: 16px;height: 16px;opacity: 0;margin-top: 2px;}
+.tableStyle tr th:first-child input + label{display: inline-block;padding-left: 20px;background: url(../images/checkbox.png) no-repeat -3px -62px;cursor: pointer;}
+.tableStyle tr th:first-child input:checked + label {background: url(../images/checkbox.png) no-repeat -3px -183px;}
+.tableStyle tr td:first-child input + label{display: inline-block;padding-left: 20px;background: url(../images/checkbox.png) no-repeat -3px -116px;cursor: pointer;white-space: nowrap;word-break: break-all;overflow: hidden;text-overflow: ellipsis;max-width: 278px;}
+.tableStyle tr td:first-child input:checked + label{background: url(../images/checkbox.png) no-repeat -3px -183px;}
+.tableStyle tr td > a,.tableStyle tr td div.moreOp{color:#0974e8;padding-left: 7px;position:relative;display: inline-block;text-decoration: underline;padding-bottom: 2px;}
+.moreOp > a {display: inline-block;color: #0974e8;text-decoration:underline;}
+.moreOp > a i {display: inline-block;width: 15px;height: 15px;background: url(../images/upDown2.png) no-repeat 0px 6px;}
+.tableStyle tr td .moreOp ul{display:none;position:absolute;z-index:2;background: #fff;width: 80px;right: -9px;box-shadow: 0px 0px 5px #ccc;border-radius: 5px;padding: 0 5px;}
+.tableStyle tr td .moreOp:hover ul{display:block;}
+.tableStyle tr td .moreOp ul li{height: 36px;line-height: 36px;}
+.tableStyle tr td .moreOp ul li a{color:#0974e8;display: block;border-bottom: 1px solid #e8e8e8;}
+/*特殊日期设置*/
+.hotelManagewapper1 {margin-top: 0px;}
+.hotelManagewapper1 > form > div{margin-right: 45px;}
+.tableContainer table tr td .delete{color:#0974e8;}
+.searchFeed{margin-top:24px;}
+.searchWraper > form > div .selectUl{width:135px;}
+.hotelManagewapper1 > form > div .selectUl{width:165px;}
+.searchWraper > form > div input[type='text']{width:135px;}
+.searchWraper > form > div input[type='text'].dataRange{background: #fff url(../images/date.png) no-repeat 172px 3px;width: 200px;}
+.searchWraper > form > div .selectUl span i{background: url(../images/upDown.png) no-repeat 7px 5px;}
+.searchWraper > form > div .selectUl span i.upDown{background: url(../images/upDown.png) no-repeat 7px -22px;}
+#setSpecial dl dd input[name='specailRadio']{position: absolute;width: 20px;height: 20px;opacity: 0;}
+#setSpecial h3{border:none;}
+#setSpecial dl dd input[name='specailRadio'] + label{display: inline-block;padding-left: 25px;padding-right:5px;background: url(../images/radio.png) no-repeat  -4px -6px;cursor: pointer;height: 16px;line-height: 16px;}
+#setSpecial dl dd input[name='specailRadio']:checked + label {background: url(../images/radio.png) no-repeat -4px -93px;}
+.specialTable tr th:first-child,.specialTable tr td:first-child{text-align:center;}
+#SpecialDate{background: #fff url(../images/date.png) no-repeat 144px 4px;}
+/*日志*/
+.logForm > div{margin-right:15px;}
+.logTable tr th:first-child,.logTable tr td:first-child{text-align:center!important;padding-left:0px!important;}
+.searchable-select-holder{width:200px;}
+.searchable-select input[type='text']{width:190px!important;}
+/**en*/
+.enAdministration  > div input[type='text'] {
+    width:141px!important;
+}
+.enAdministration > div .selectUl {
+    width: 110px !important;
+}
+#popBoxSaleState dl dt {
+    width: 145px;
+}
+
+#popBoxSaleState dl dd {
+    width:220px;
+}

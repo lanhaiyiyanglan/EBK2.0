@@ -1,0 +1,67 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.financialSearch .selectUl,.financialSearch input[type='text']{width:190px!important;}
+#txtBillNo {width: 252px !important;}
+#verificationStatus {width: 160px !important;}
+.financialSearch input[type='text'].dataRange{background: #fff url(../images/date.png) no-repeat 162px 3px;}
+.financialSearch > form > div{margin-right:20px;}
+.financialSearch .selectUl span i {background: url(../images/upDown.png) no-repeat 7px 5px}
+.financialSearch .selectUl span i.upDown {background: url(../images/upDown.png) no-repeat 7px -22px}
+.tableStyle{font-size:12px;}
+.tableContainer>table tr th:first-child,.tableContainer>table tr td:first-child {text-align: left;padding-left: 10px}
+.tableContainer>table tr td:first-child{line-height:30px;}
+.tableContainer>table tr td a{color:#108EE9;padding: 0 3px;text-decoration:underline;}
+.tableContainer>table tr td.red:hover,.tableContainer>table tr td.green:hover{text-decoration:underline;cursor:pointer;}
+/*弹框*/
+.fapiaoBox{display:none;padding: 20px 15px;}
+.fapiaoBox dl{clear:both;min-height: 30px;margin-bottom: 10px;font-size:12px;}
+.fapiaoBox dl dt{color:#666666;display:inline-block;width:102px;padding-right: 10px;float:left;text-align: right;line-height: 30px;}
+.fapiaoBox dl dt span{color:#FF0000;}
+.fapiaoBox dl dd{display:inline-block;width:473px;float:left;min-height: 30px;position: relative;}
+.fapiaoBox dl dd >input[type='text']{width: 473px;height: 32px;border:1px solid #e8e8e8;border-radius:4px;text-indent: 10px;font-size: 12px;color: #666666;}
+.fapiaoBox dl dd textarea{width: 473px;height:100px;border:1px solid #e8e8e8;border-radius:4px;font-size: 12px;color: #666666;text-indent: 10px;font-family: "Helvetica Neue";line-height: 22px;}
+.fapiaoBox .tips{height:150px;overflow-y:auto;font-size:12px;font-family:'PingFangSC-Regular', 'PingFang SC';margin-top: 15px;}
+.fapiaoBox .searchable-select,.fapiaoBox .searchable-select-holder{width: 473px;border-radius:4px;}
+.fapiaoBox .searchable-select-dropdown{max-height:200px;overflow-y: scroll;}
+.fapiaoBox .tips h3{color:red;font-size:12px;}
+.fapiaoBox .tips p{color:#666666;font-weight: 400;line-height: 22px;}
+.fpaBox input[type='text'],.fpaBox input[type='number']{width:98px;height:30px;border:1px solid #e8e8e8;border-radius:4px;box-sizing:border-box;display: inline-block;font-size: 12px;margin-right: 9px;float: left;color: #666666;}
+.fapiaoBox input[name='fapiaoStyle']{position: absolute;width: 20px;height: 20px;opacity: 0;top: 50%;margin-top: -10px;}
+.fapiaoBox input[name='fapiaoStyle']+label {display: inline-block;padding-left: 25px;padding-right: 30px;background: url(../images/radio.png) no-repeat -4px 1px;cursor: pointer;height: 30px;line-height: 30px;}
+.fapiaoBox input[name='fapiaoStyle']:checked+label {background: url(../images/radio.png) no-repeat -3px -86px;}
+.fpItem input{text-indent: 10px;}
+.fpItem .selectUl{width:100px;height:30px;line-height:30px;vertical-align: top;box-sizing:border-box;margin-right: 9px;float: left;}
+.fpItem .selectUl span em{font-size:12px;}
+.fpItem .selectUl span i {background: url(../images/upDown.png) no-repeat 7px 5px}
+.fpItem .selectUl span i.upDown {background: url(../images/upDown.png) no-repeat 7px -22px}
+p.countM{padding-bottom: 10px;color:#666666;font-weight:400;}
+#add,.jian{color:#0974e8;font-weight:400;cursor:pointer;line-height: 30px;display: inline-block;font-size:12px;}
+.fapiaoBox .searchable-select-holder{font-size: 12px;color:#666666;}
+.fpItem{min-height:30px;margin-bottom:10px;}
+.fpItem .selectUl ul li{font-size:12px;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.countM span {
+    color: #ff7324;
+}
+.input-file{display: inline-block;position: relative;overflow: hidden;text-align: center;width: auto;background-color: #108EE9;border: solid 1px #ddd;border-radius: 4px;padding: 5px 10px;font-size: 12px;font-weight: normal;color: #ffffff!important;line-height: 18px;color:#fff;text-decoration: none;}
+.input-file input[type="file"] {position: absolute;top: 0;right: 0;font-size: 14px;background-color: #fff;height: 30px;width: 80px;opacity: 0;filter: alpha(opacity=0);}
+.showFileName1{display: inline-block;line-height: 30px;vertical-align: top;margin-left: 10px;}
+.bhTips{font-size:12px;line-height:22px;padding:20px 15px;}
+/*账单详情*/
+.billWrapper{width:100%;min-width:1200px;min-height:800px;}
+.billBox > ul{min-height:50px;border-top:1px solid rgba(235, 235, 235, 1);margin-top: 10px;padding-bottom: 15px;overflow: hidden;}
+.billBox{width:1200px;margin:0 auto;margin-bottom:30px;}
+.billBox > ul li{width:400px;display:inline-block;padding-top: 28px;float: left;color: #656565;height:20px;line-height:20px;}
+.billBox > ul li span{font-weight: 500;color: #999999;width:135px;padding-left:25px;padding-right:10px;display: inline-block;}
+.billBox > ul li i.orange{font-size: 14px;color: #FF9900;font-weight: 700;}
+.billBox > table{width:100%;font-size:12px;text-align:center;table-layout: fixed;}
+.billBox > table tr th{background:#f3f3f3;height:56px;color:#656565;font-weight:normal;}
+.billBox > table tr td{height:48px;border-bottom:1px solid rgba(235, 235, 235, 1);color:#666666;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.billBox>table tr td:first-child,.billBox>table tr td:nth-child(2),.billBox>table tr td:nth-child(3),.billBox>table tr td:nth-child(4){cursor:pointer;}
+.billBox > table tr th:first-child,.billBox > table tr td:first-child{text-align:left;text-indent:30px;}
+.billBox > h3{font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight: 650;font-style: normal;font-size: 14px;color: #666666;line-height: 28px;min-height: 28px;overflow: hidden;}
+.billBox > h3 i{display:inline-block;width:12px;height:16px;background:url(../images/tis.png) no-repeat;vertical-align: middle;margin-right: 12px;margin-top: -2px;}
+.billBox > h3 > span{float:right;font-style:normal;}
+.billBox > h3 > span a{display:inline-block;height:28px;line-height:28px;margin-left:10px;background-color: rgba(16, 142, 233, 1);font-family: 'PingFangSC-Regular', 'PingFang SC';font-weight: 400;font-style: normal;font-size: 12px;color: #FFFFFF;padding:0 10px;border-radius: 4px;}
+.billBox > h4{border:1px solid rgba(212, 240, 252, 1);border-radius: 4px;background-color: rgba(230, 243, 252, 1);height: 32px;line-height:32px;font-weight: 400;font-size: 12px;color: #666666;font-family: 'PingFangSC-Regular', 'PingFang SC';padding-left:30px;width:1168px;margin:10px auto;}
+.billBox > h4 span{padding-right:15px;}
+.billBox > h4 span em{    font-family: 'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight: 650;color: #FF9900;font-size:14px;}

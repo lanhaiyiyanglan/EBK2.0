@@ -1,0 +1,166 @@
+﻿@charset "utf-8";
+/* CSS Document */
+.hereTop{height: 45px;line-height: 45px;padding-top: 5px;}
+.searchFeed{margin-top:0px;margin-bottom: 15px;color:#ff9900;}
+.tableTit{width:1200px;margin:0 auto;clear:both;margin-bottom: 10px;min-height: 50px;overflow: hidden;}
+.tableTit p.hui{font-size:14px;color:#ff9900;margin-top:20px;margin-bottom: 10px;}
+.typeGo{float:left;}
+.typeGo em{color:#ff9900;font-size:14px;}
+.dateGo{float:right;}
+.typeGo a {display: inline-block;width: 30px;height: 30px;cursor: pointer;vertical-align: middle;}
+.typeGo a#beforeTp {background: url(../images/bigUpdate.png) no-repeat 12px -67px;padding-right: 10px;}
+.typeGo a#beforeTp.disabled {background: url(../images/bigUpdate.png) no-repeat 14px -102px;padding-right: 10px;}
+.typeGo a#afterTp {background: url(../images/bigUpdate.png) no-repeat -162px -102px;padding-left: 10px;}
+.typeGo a#afterTp.disabled {background: url(../images/bigUpdate.png) no-repeat -161px -65px;padding-left: 10px;}
+.dateGo a {display: inline-block;padding: 0px 12px;height: 30px;line-height: 30px;border: 1px solid #0974e8;color: #0974e8;text-align: center;background: #fff;border-radius: 4px;font-size: 14px;cursor: pointer;vertical-align: middle;box-sizing: border-box;}
+.dateGo input {font-size: 18px;height: 30px;line-height: 30px;display: inline-block;color: #333333;width: 120px;outline: none;text-indent: 10px;border-radius: 2px;margin: 0 5px;border: 1px solid #dddddd;vertical-align: top;background: #fff url(../images/date.png) no-repeat 94px 3px;}
+.tableday table {width: 1200px;margin: 0 auto;margin-bottom: 40px;}
+.tableday table .tabtd .hopen {text-align: center;background: #e2e2e2}
+.tableday table .tabtd .hclose {text-align: center;background: #00c900}
+.tableday table .tabtd h2 .spanopen {float: right;font-size: 12px;font-weight: normal;width: 30px;height: 30px;background: #e2e2e2}
+.tableday table .tabtd h2 .spanclose {float: right;font-size: 12px;font-weight: normal;width: 30px;height: 30px;background: #00c900}
+.tableday table thead tr th {border-right: 1px solid #fff;height: 52px;background: #0974e8;color: #fff;text-align: center;font-weight: normal;font-size: 18px}
+.tableday table thead tr th:last-child {border-right: 1px solid #0974e8}
+.tableday table tbody tr {border-top: 1px solid #fff;border-left: 1px solid #ddd}
+.tableday table tbody tr td {text-align: center;font-size: 18px;border-bottom: 1px solid #ddd;border-right: 1px solid #ddd;overflow: hidden}
+.tableday table .tabtd {height: 150px;position: relative}
+.tableday table .tabtd h2 {font-size: 14px;color: #0974e8;height: 42px;line-height: 42px;border-bottom: 1px solid #ddd}
+.tableday table .tabtd i {position: absolute;display: block;width: 20px;height: 20px;line-height: 20px;font-size: 12px;color: #fff;background: #fc5c61;text-align: center;right: 0}
+.tableday table .tabtd .tdprice,.tableday table .tabtd .tdroomtype {display: inline-block;max-width: 120px}
+.tableday table .tabtd .tab_marbot {text-align: center;font-size: 14px;color: #000;line-height: 31px;min-height: 31px;max-height: 62px;overflow: hidden}
+.tableday table .tabtd .tab_marbot .tdroomtype {max-width: 145px!important}
+.tableday table .tabtd .tab_marbot em {display: inline-block}
+.tableday table .tabtd .tab_configure {height: 44px;border-top: 1px solid #ddd;color: #999;font-size: 14px}
+.tableday table .tabtd .tab_ren {background: url(../images/bigUpdate.png) no-repeat 21px -266px;width: 60px;height: 44px;float: left;font-size: 14px;color: #ccc;line-height: 44px;padding-left: 25px}
+.tableday table .tabtd .tab_can {background: url(../images/bigUpdate.png) no-repeat 0 -367px;width: 70px;height: 44px;float: right;font-size: 14px;color: #ccc;line-height: 44px}
+.roomDisable {background:rgba(221,221,221,0.3);}
+.roomEnable {background: rgba(160,205,255,0.5);}
+
+.tquery {width: 1200px;margin: 0 auto;background: #f0f7ff;}
+.tquery h3{height:60px;line-height:60px;border-bottom:1px solid #e8e8e8;margin-bottom: 20px;color: #333333;font-size: 14px;}
+.tquery h3 i{display:inline-block;width: 4px;height:20px;vertical-align:middle;background:#0974e8;margin-left:15px;margin-right:10px;}
+.tquery > div{padding-bottom:20px;font-size:14px;color:#333333;}
+.tquery > div >span{width: 120px;padding-right:20px;text-align:right;display: inline-block;}
+.tquery > div > span i.red{font-style:normal;padding-right:2px;vertical-align: middle;}
+.tquery > div input[type='text']{width:205px;height:30px;border:1px solid #e8e8e8;text-indent:10px;}
+.tquery > div > input[type='text']{width:220px;background: #fff url(../images/date.png) no-repeat 192px 3px;}
+.tquery > div > ul{display:inline-block;}
+.tquery > div > ul li{display:inline-block;margin-right: 15px;position: relative;}
+.tquery > div > ul li input{position: absolute;width: 16px;height: 16px;opacity: 0;top: 2px;}
+.tquery > div > ul li input + label{display: inline-block;padding-left: 20px;background:url(../images/checkbox.png) no-repeat -3px -114px;cursor: pointer;}
+.tquery > div > ul li input:checked + label {background: url(../images/checkbox.png) no-repeat -3px -181px;}
+.tquery > div .choose_weeks{display:inline-block;margin-right:25px;}
+.tquery > div .choose_weeks i{padding-left:5px;}
+.tquery > div .choose_weeks span{display:inline-block;margin-right:5px;}
+.tquery > div .submitBtn{float:right;margin-right:20px;}
+.tquery > div .submitBtn input{padding:0 25px;background:#0974e8;color:#fff;border-radius:4px;height:30px;line-height:30px;display:inline-block;text-align: center;}
+.tquery > div .submitBtn input[type='reset']{margin-left:14px;height: 28px;line-height: 28px;border: 1px solid #0974e8;background: #f0f7ff;color: #0974e8;}
+.label-switch input {height: 2.2rem;width: 100%;border: none;outline: none}
+.label-switch {display: inline-block;vertical-align: middle;width: 42px;height: 25px;position: relative;}
+.label-switch .checkbox {width: 42px;border-radius: 20px;box-sizing: border-box;height: 25px;background: #e5e5e5;z-index: 0;-webkit-appearance: none;-moz-appearance: none;-ms-appearance: none;appearance: none;border: none;cursor: pointer;position: absolute;-webkit-transition-duration: 300ms;transition-duration: 300ms;top: 0px;}
+.label-switch .checkbox:before {content: ' ';position: absolute;left: 1px;top: 1px;width: 40px;border-radius: 20px;box-sizing: border-box;height: 23px;background: #fff;z-index: 1;-webkit-transition-duration: 300ms;transition-duration: 300ms;-webkit-transform: scale(1);transform: scale(1);}
+.label-switch .checkbox:after {content: ' ';height: 23px;width: 23px;border-radius: 50%;background: #fff;position: absolute;z-index: 2;top: 1px;left: 1px;box-shadow: 0 1px 2px rgba(0,0,0,.4);-webkit-transform: translateX(0);transform: translateX(0);-webkit-transition-duration: 300ms;transition-duration: 300ms;}
+.label-switch input[type="checkbox"] {opacity: 0}
+.label-switch input[type="checkbox"]:checked+.checkbox {background: #0974e8}
+.label-switch input[type="checkbox"]:checked+.checkbox:before {-webkit-transform: scale(0);transform: scale(0)}
+.label-switch input[type="checkbox"]:checked+.checkbox:after {-webkit-transform: translateX(1.1rem);transform: translateX(1.1rem)}
+html.android .label-switch input[type="checkbox"]+.checkbox {-webkit-transition-duration: 0;transition-duration: 0}
+html.android .label-switch input[type="checkbox"]+.checkbox:after,html.android .label-switch input[type="checkbox"]+.checkbox:before {-webkit-transition-duration: 0;transition-duration: 0}
+
+.popBox dl {
+    width: 420px !important;
+}
+.popBox3{padding-top:0px!important;}
+.popBox3 dl dt {
+    width: 112px !important;
+}
+.popBox3 dl {
+    margin-bottom: 5px
+}
+
+.popBox3 dl dd {
+    width: 287px;
+}
+
+.popBox3 dl dd span {
+    display: inline-block;
+    position: relative
+}
+
+.popBox3 dl dd input[type='text'] {
+    display: inline-block;
+    width: 260px;
+    height: 30px;
+    line-height: normal;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    text-indent: 4px;
+    color: #999;
+    position: relative;
+}
+
+.popBox3 dl dd i {
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    border-left: 1px solid #ddd;
+    height: 20px;
+    line-height: 23px;
+    color: #ddd;
+    text-align: center;
+    width: 48px;
+    margin-top: 4px;
+    background: #ffffff;
+    right: 1px;
+}
+
+.popBox3 dl dd span input[type="text"] {
+    width: 117px!important;
+}
+
+.popBox3 dl dd input[type="checkbox"] {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle
+}
+
+.popBox3 dl dd span:nth-child(2) {
+    margin-left: 5px
+}
+
+.popBox3 p {
+    font-size: 14px;
+    color: #999;
+    padding-left: 290px;
+    margin-bottom: 15px
+}
+
+.enTableDay table .tabtd .tab_ren {
+    background: url(../images/bigUpdate.png) no-repeat 0px -266px;
+    width: 60px;
+    height: 44px;
+    float: left;
+    padding-left: 18px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 44px;
+    margin-left: 10px;
+}
+
+.enTableDay table .tabtd .tab_can {
+    background: url(../images/bigUpdate.png) no-repeat 0px -367px;
+    width: 60px;
+    padding-left: 21px;
+    height: 44px;
+    float: right;
+    text-align: left;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 44px;
+}
+
+
+
+

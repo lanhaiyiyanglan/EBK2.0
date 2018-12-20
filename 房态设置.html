@@ -1,0 +1,229 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>房态设置</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hotelRoom.css">
+<link rel="stylesheet" href="css/daterangepicker.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/handlebars-v4.0.5.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/My97DatePicker/WdatePicker.js"></script>
+<script src="js/hotelRoom.js"></script>
+</head>
+
+<body>
+<div class="header">
+   <div class="headerNav">
+   <img src="images/logo.png">
+   <ul id="menuList">
+    <li><a href="#">订单管理</a></li>
+        <li><a href="#">酒店管理</a></li>
+        <li><a href="#">房型管理</a></li>
+        <li><a href="#">VR管理</a></li>
+        <li><a href="#">酒店服务</a></li>
+        <li><a href="#">用户设置</a></li>
+     </ul>
+     <div class="navBar">
+         <a href="#">English</a>
+         <div class="per">
+            <span>伍鸿锋</span>
+            <div class="perContent">
+               <p>账号信息<a href="#" class="right">退出</a></p>
+               <ul>
+                  <li><span>部门</span>技术部</li>
+                  <li><span>座机</span>0731-45122525</li>
+                  <li><span>邮箱</span>437679832@qq.com</li>
+                  <li><span>账户类型</span>子账号</li>
+                  <li><span>酒店权限</span>123456</li>
+               </ul>
+               <p><a href="#">修改密码</a><a href="#" class="right">编辑账号信息</a></p>
+            </div>
+         </div>
+     </div>
+   </div>
+</div>
+<!--setWeek-->
+<div class="hereTop"><span class="blue">锡切斯月亮酒店（Lluna Sitges）</span>／日志</div>
+<p class="searchFeed">测试房型三  超豪华套房（提前10天取消）</p>
+<form class="tquery">
+            <h3><i></i>批量修改价格</h3>
+            <div>
+                <span><i class="red">*</i>自定义日期：</span>
+                <input type="text" class="dataRange">
+            </div>
+            <div class="quer_input">
+                <span><i class="red">*</i>自定义周末：</span>
+                <ul>
+                    <li><input type="checkbox" id="allcheck" /><label for="allcheck">全选</label></li>
+                    <li><input type="checkbox" value="1" id="mt_skin_monday" /><label for="mt_skin_monday">周一</label></li>
+                    <li><input type="checkbox" value="2" id="mt_skin_tuesday" /><label for="mt_skin_tuesday">周二</label></li>
+                    <li><input type="checkbox" value="3" id="mt_skin_wednesday" /><label for="mt_skin_wednesday">周三</label></li>
+                    <li><input type="checkbox" value="4" id="mt_skin_thursday" /><label for="mt_skin_thursday">周四</label></li>
+                    <li><input type="checkbox" value="5" id="mt_skin_friday" /><label for="mt_skin_friday">周五</label></li>
+                    <li><input type="checkbox" value="6" id="mt_skin_saturday" /><label for="mt_skin_saturday">周六</label></li>
+                    <li><input type="checkbox" value="0" id="mt_skin_sunday" /><label for="mt_skin_sunday">周日</label></li>
+                </ul>
+            </div>
+            <div>
+                <span><i class="red">*</i>自定义价格：</span>
+                <div class="choose_weeks"><input placeholder="请输入" type="text" id="roomprice" /><i>CNY</i></div>
+                <div class="choose_weeks"><i class="red">*</i>房量：<span><input type="text" id="roomcount" placeholder="保留房" /><i>间</i></span><span><input placeholder="非保留房" type="text" id="roomcount2" /><i>间</i></span></div> 
+            </div>
+            <div>
+                <span><i class="red">*</i>上线状态：</span>
+                <label class="label-switch"><input type="checkbox"><div class="checkbox"></div></label>
+                <div class="submitBtn">
+                  <input type="button" value="确定" id="btnSavePrice" /><input type="reset" value="取消" id="btnCancelsw" />
+                </div>
+            </div>
+</form>
+<!---->
+<div class="tableTit">
+    <p class="hui">温馨提示：蓝色：表示开房状态， 灰色：表示关房状态</p>
+    <div class="typeGo">
+        <em>售卖房型：</em>
+        <a href="javascript:void(0);" id="beforeTp"></a><span>大床房</span>
+        <a href="javascript:void(0);" id="afterTp"></a>
+        <ul id="hiddenType" style="display: none;">
+                    <li msname="测试房型三" rmcode="MTR00000004">[特价大促销]豪华间</li>
+                    <li msname="测试房型二" rmcode="MTR00000005">[The Spring Festival offer]</li>
+                    <li msname="测试房型一" rmcode="MTR00000009">[今日特价]豪华套间</li>
+                    <li msname="测试房型一" rmcode="MTR00000013">高级房[特价大促销]提前五天入住</li>
+                    <li msname="测试房型一" rmcode="MTR00000014">高级房[特惠专享]连住三晚优惠</li>
+                    <li msname="测试房型一" rmcode="MTR00000015">高级房[特惠专享]提前5天预订、连住3晚</li>
+                    <li msname="测试房型一" rmcode="MTR00000016">高级房[特惠专享]九十九晚连住优惠</li>
+                    <li msname="测试房型一" rmcode="MTR00000017">高级房</li>
+                    <li msname="测试房型二" rmcode="MTR00000018">尊贵房</li>
+                    <li msname="测试房型二" rmcode="MTR00000019">尊贵房（提前5天可退）</li>
+                    <li msname="测试房型三" rmcode="MTR00000020">超豪华套房</li>
+                    <li msname="测试房型三" rmcode="MTR00000021">超豪华套房（提前3天取消）</li>
+                    <li msname="测试房型三" rmcode="MTR00000022">超豪华套房（提前10天取消）</li>
+                    <li msname="测试房型三" rmcode="MTR00000027">[特价大促销][今日特价]</li>
+                    <li msname="测试房型一" rmcode="MTR00000028">[特惠][升级特惠][限时特惠]</li>
+                    <li msname="测试房型一" rmcode="MTR00000029">[特价大促销]</li>
+                    <li msname="测试房型二" rmcode="MTR00000030">***豪华套房</li>
+                    <li msname="测试房型二" rmcode="MTR00000031">[春节特惠][特价大促销]</li>
+        </ul>
+    </div>
+    <div class="dateGo">
+        <a href="javascript:void(0);" id="before">上一月</a><input type="text" value="2018-05" id="spSearchDate" onClick="WdatePicker({el:'spSearchDate',isShowClear: false,dateFmt:'yyyy-MM',onpicked:RoomPrice.pickedFunc,readOnly:true})"><a href="javascript:void(0);" id="after">下一月</a>
+        <input type="hidden" id="hiSearchYear" value="2018">
+        <input type="hidden" id="hiSearchMonth" value="5">
+        <input type="hidden" id="hiNowDate" value="2018/5/10 15:56:07">
+    </div>
+</div>
+<!--table-->
+<div class="tableday">
+    <div style="display:none" id="tdTemp">
+        <div class="tabtd" id="td_item{{Day}}" data-day="{{Day}}">
+            <h2 id="h{{Day}}">{{Day}}</h2><i style="display: none" class="full">满</i>
+            <div class="tab_marbot">价格：￥<span class="tdprice">0</span></div>
+            <div class="tab_marbot">房量：<br><span class="tdroomtype">保<span><label id="lbl_UseAc{{Day}}">0</label>/<label id="lbl_Ac{{Day}}">0</label></span> 非<em><label id="lbl_UseRc{{Day}}">0</label>/<label id="lbl_Rc{{Day}}">0</label></em></span></div>
+            <div class="tab_configure">
+                <div class="tab_ren"><label name="lbl_PersonCount">1</label><span class="mt_placeholder_input_tab_pax">人</span></div>
+                <div class="tab_can"><label name="lbl_Breakfast">0</label>份</div>
+            </div>
+        </div>
+    </div>
+    <table class="tablebox" border="0" cellpadding="0" cellspacing="0" onselectstart="return false">
+        <thead>
+            <tr>
+                <th><span id="mt_skin_sunday1">周日</span></th>
+                <th><span id="mt_skin_monday1">周一</span></th>
+                <th><span id="mt_skin_tuesday1">周二</span></th>
+                <th><span id="mt_skin_wednesday1">周三</span></th>
+                <th><span id="mt_skin_thursday1">周四</span></th>
+                <th><span id="mt_skin_friday1">周五</span></th>
+                <th><span id="mt_skin_saturday1">周六</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr id="trRoom">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<!--侧边栏-->
+ <div class="helpBar" id="helpBarMtindex">
+    <a target="_parent" id="kFu" href="tencent://message/?Menu=yes&amp;uin=209252360&amp;Site=萌兔客服&amp;Service=200&amp;sigT=2a0e37386280486ada2b5d5e69ee49186ccae1257fd9e1c9598af1f0b9c916067002a57aaaec8c8d" ></a>
+    <a href="javascript:void(0);"   id="zXun"></a>
+    <a href="javascript:void(0);" id="gzNumber"><i></i></a>
+    <a href="javascript:void(0);" id="feedBack"></a>
+    <a href="javascript:void(0);" id="voice"></a>
+    <a href="javascript:void(0);" id="goTop"></a>
+</div>
+<div class="tipKuang">
+    <div class="kfBox">
+        <div class="kfInfo">
+            <i></i>
+            <p>售后问题请拨打客服电话</p>
+            <ul>
+                <li>客服电话：0731-88725870</li>
+                <li>紧急联系电话：189-3247-6485</li>
+            </ul>
+        </div>
+        <div class="closeLine">关闭</div>
+    </div>
+</div>
+<!--copyRight-->
+<div class="copyRight"> Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层 湘ICP备160</div>
+</body>
+</html>

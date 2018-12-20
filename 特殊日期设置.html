@@ -1,0 +1,201 @@
+<!DOCTYPE>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>特殊日期设置</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/hotelManage.css">
+<link rel="stylesheet" href="css/daterangepicker.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/daterangepicker.js"></script>
+<script src="js/layer/layer.js"></script>
+<script src="js/manageOperation.js"></script>
+</head>
+
+<body>
+<div class="header">
+   <div class="headerNav">
+   <img src="images/logo.png">
+   <ul id="menuList">
+    <li><a href="#">订单管理</a></li>
+        <li><a href="#">酒店管理</a></li>
+        <li><a href="#">房型管理</a></li>
+        <li><a href="#">VR管理</a></li>
+        <li><a href="#">酒店服务</a></li>
+        <li><a href="#">用户设置</a></li>
+     </ul>
+     <div class="navBar">
+         <a href="#">English</a>
+         <div class="per">
+            <span>伍鸿锋</span>
+            <div class="perContent">
+               <p>账号信息<a href="#" class="right">退出</a></p>
+               <ul>
+                  <li><span>部门</span>技术部</li>
+                  <li><span>座机</span>0731-45122525</li>
+                  <li><span>邮箱</span>437679832@qq.com</li>
+                  <li><span>账户类型</span>子账号</li>
+                  <li><span>酒店权限</span>123456</li>
+               </ul>
+               <p><a href="#">修改密码</a><a href="#" class="right">编辑账号信息</a></p>
+            </div>
+         </div>
+     </div>
+   </div>
+</div>
+<!--搜索-->
+<div class="hereTop"><span class="blue">锡切斯月亮酒店（Lluna Sitges）</span>／特殊日期设置</div>
+<div class="searchWraper hotelManagewapper1">
+      <form>
+         <div><em>特殊日期：</em><input type="text" class="dataRange" readonly></div>
+         <div>
+              <em>类型：</em>
+              <div class="selectUl">
+                     <span><em>全部</em><i></i><input type="hidden" name="spType"></span>
+                     <ul>
+                        <li data="0">类型1</li>
+                        <li data="1">类型2</li>
+                     </ul>
+              </div>
+          </div>
+          <div class="rightOperation"><input type="button" value="搜索"><input type="button" value="重置" class="resetBtn"></div>
+    </form>
+</div>
+<p class="searchFeed">共搜索到 922 条数据</p>
+<div class="hotelManageTT">
+      <a href="javascript:void(0);" id="setSpecail">特殊日期设置</a>
+</div>
+<div class="tableContainer">
+    <table class="tableStyle specialTable">
+      <tr>
+        <th width="270">类型</th>
+        <th width="270">特殊日期</th>
+        <th width="270">创建人</th>
+        <th width="270">创建日期</th>
+        <th>操作</th>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+      <tr>
+        <td>不准离店</td>
+        <td>2017-05-01</td>
+        <td>莫小姚</td>
+        <td>2017-04-29</td>
+        <td><a href="#" class="blue">删除</a></td>
+      </tr>
+    </table>
+    <!--pagenation-->
+    <div class="pagination">
+           <span class="current prev">上一页</span>
+           <a href="#">1</a>
+           <a href="#">2</a>
+           <a href="#">3</a>
+           <a href="#" class="current">4</a>
+           <a href="#">100</a>
+           <a href="#" class="next">下一页</a>
+     </div>
+ </div>
+ <!---->
+ <div class="popBox" id="setSpecial" style="display: none">
+    <h3><i></i>特殊日期设置<span onClick="manageOperation.layerClose();"></span></h3>
+    <dl>
+        <dt>特殊日期</dt>
+        <dd><!--<input type="text" value="2018-05-21" id="SpecialDate" onClick="WdatePicker({})">--><input type="text" class="dataRange2"></dd>
+    </dl>
+    <dl>
+        <dt>&nbsp;</dt>
+        <dd>
+            <input type="radio" name="specailRadio" id="noIn"><label for="noIn">不准入住</label>
+            <input type="radio" name="specailRadio" id="noOut"><label for="noOut">不准离店</label>
+        </dd>
+    </dl>
+</div>
+ <!--侧边栏-->
+ <div class="helpBar" id="helpBarMtindex">
+    <a target="_parent" id="kFu" href="tencent://message/?Menu=yes&amp;uin=209252360&amp;Site=萌兔客服&amp;Service=200&amp;sigT=2a0e37386280486ada2b5d5e69ee49186ccae1257fd9e1c9598af1f0b9c916067002a57aaaec8c8d" ></a>
+    <a href="javascript:void(0);"   id="zXun"></a>
+    <a href="javascript:void(0);" id="gzNumber"><i></i></a>
+    <a href="javascript:void(0);" id="feedBack"></a>
+    <a href="javascript:void(0);" id="voice"></a>
+    <a href="javascript:void(0);" id="goTop"></a>
+</div>
+<div class="tipKuang">
+    <div class="kfBox">
+        <div class="kfInfo">
+            <i></i>
+            <p>售后问题请拨打客服电话</p>
+            <ul>
+                <li>客服电话：0731-88725870</li>
+                <li>紧急联系电话：189-3247-6485</li>
+            </ul>
+        </div>
+        <div class="closeLine">关闭</div>
+    </div>
+</div>
+<!--copyRight-->
+<div class="copyRight"> Copyright © m-tu.com 湖南萌兔旅游科技有限公司·长沙市湘江中路万达总部国际C2栋21层 湘ICP备160</div>
+</body>
+</html>

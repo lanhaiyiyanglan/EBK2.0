@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+.uploadWraper{width:1200px;margin:0 auto;min-height:730px;margin-bottom:30px;padding-top:10px;}
+.uploadWraper dl{font-size:14px;clear:both;min-height:30px;overflow:hidden;margin-bottom:20px;}
+.uploadWraper dl dt{width:120px;text-align:right;padding-right:30px;float:left;}
+.uploadWraper dl dd{width:465px;float:left;}
+.uploadWraper dl dd input[type='text']{width:373px;height:28px;line-height:28px;border:1px solid #e8e8e8;text-indent: 10px;}
+.uploadWraper dl dd textarea{width:373px;height:160px;line-height:28px;border:1px solid #e8e8e8;text-indent: 10px;outline: none;}
+.uploadWraper dl dd > i{padding-left:10px;}
+#chooseUpload li{display:inline-block;color:#0066cc;margin-right: 30px;}
+#chooseUpload li.on{border-bottom:1px solid #0066cc;}
+.uploadWraper dl dd input[type='button'],.uploadWraper dl dd input[type='reset']{padding:0 25px;display:inline-block;height:28px;line-height:28px;border:1px solid #0974e8;font-size:14px;border-radius:4px;color:#fff;background:#0974e8;}
+.uploadWraper dl dd input[type='reset']{background:#fff;color:#0974e8;margin-left:60px;}
+.fileBox ul{padding-top:20px;min-height:105px;overflow:hidden;}
+.fileBox ul li{position:relative;display:inline-block;width: 95px;height: 95px;position:relative;padding: 5px 5px;vertical-align: middle;margin-right:20px;margin-bottom: 20px;border:1px dashed #bdbdbd;border-radius: 5px;}
+.fileBox ul li img,.fileBox ul li video{display: block;vertical-align: middle;width: 100%;height: 100%;}
+.fileBox ul li input[type='file']{display: block;width: 0;height: 0;-webkit-opacity: 0.0;  -moz-opacity: 0.0;  -khtml-opacity: 0.0;  opacity: .0;  filter:alpha(opacity=0);  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=0);}
+.fileBox ul li i{z-index:3;width: 20px;height: 20px;display:block;position: absolute;cursor: pointer;background:url(../images/delClose.png) no-repeat;border-radius:50%;right: -8px;top: -7px;}
+.fileBox ul li > a{position:absolute;display:block;z-index:2;width:100%;height:100%;background:url(../images/linkVr.png) no-repeat center;top:0px;left:0px;cursor: pointer;}
+.fileBox ul li > a.play{background:url(../images/play.png) no-repeat center;}
